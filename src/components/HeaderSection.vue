@@ -37,6 +37,9 @@ header{
 header a {
   color: black;
 }
+nav li a:hover {
+  color: rgb(0, 138, 255);
+}
 .header-logo{
   max-width: 4rem;
   max-height: 4rem;
