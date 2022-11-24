@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="img/dc-logo.png" alt="">
+    <img src="@/img/dc-logo.png" alt="">
     <nav>
       <ul>
         <li></li>
@@ -25,5 +25,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+header{
+  background-color: white;
+  height: 171px;
+}
 </style>
