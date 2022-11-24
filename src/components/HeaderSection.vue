@@ -32,7 +32,7 @@ header{
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 header a {
   color: black;

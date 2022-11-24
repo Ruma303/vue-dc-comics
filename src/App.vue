@@ -22,7 +22,6 @@ export default {
 
 <style lang="scss">
 //Colori
-$color_blue: rgb(15, 130, 247); //FIXME: variabile dichiarata
 *{
   margin:0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;
 }
