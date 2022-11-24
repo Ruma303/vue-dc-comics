@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss" scoped>
   .top-footer{
-    background-color: rgb(15, 130, 247);
+    background-color: $color_blue; //FIXME: qui chiamata alla variabile ma non funziona
     height: 189px;
   }
   .middle-footer{
@@ -27,7 +27,7 @@ export default {
     background-color: rgb(47, 47, 47);
     height: 157px;
   }
-  .rest-footer{ //FIXME: non compare
+  .rest-footer{
     background-color: rgb(32, 32, 32);
     height: 50vh;
   }
