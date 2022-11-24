@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="@/img/dc-logo.png" alt="">
+    <img src="@/img/dc-logo.png" alt="" class="header-logo">
     <nav>
       <ul>
         <li><a href="#">CHARACTERS</a></li>
@@ -29,8 +29,23 @@ header{
   background-color: white;
   height: 171px;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
 }
 header a {
   color: black;
+}
+.header-logo{
+  max-width: 4rem;
+  max-height: 4rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
 }
 </style>
