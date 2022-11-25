@@ -1,18 +1,17 @@
 <template>
   <header>
-    <img src="@/img/dc-logo.png" alt="" class="header-logo">
+    <img src="@/img/dc-logo.png"
+    alt=""
+    class="header-logo"
+    >
     <nav>
       <ul>
-        <li><a href="#">CHARACTERS</a></li>
-        <li><a href="#">COMICS</a></li>
-        <li><a href="#">MOVIES</a></li>
-        <li><a href="#">TV</a></li>
-        <li><a href="#">GAMES</a></li>
-        <li><a href="#">COLLECTIBLES</a></li>
-        <li><a href="#">VIDEOS</a></li>
-        <li><a href="#">FANS</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">SHOP</a></li>
+        <li
+          v-for="eleMenu in arrMenu"
+          :key="eleMenu.text"
+        >
+          <a :href="eleMenu.url">{{ eleMenu.text }}</a>
+      </li>
       </ul>
     </nav>
   </header>
@@ -21,6 +20,52 @@
 <script>
 export default {
   name: 'HeaderSection',
+  data() {
+    return {
+      arrMenu: [
+        {
+          url: '#Characters',
+          text: 'Characters',
+        },
+        {
+          url: '#Comics',
+          text: 'Comics',
+        },
+        {
+          url: '#Movies',
+          text: 'Movies',
+        },
+        {
+          url: '#TV',
+          text: 'TV',
+        },
+        {
+          url: '#Games',
+          text: 'Games',
+        },
+        {
+          url: '#Collectibles',
+          text: 'Collectibles',
+        },
+        {
+          url: '#Videos',
+          text: 'Videos',
+        },
+        {
+          url: '#Fans',
+          text: 'Fans',
+        },
+        {
+          url: '#News',
+          text: 'News',
+        },
+        {
+          url: '#Shop',
+          text: 'Shop',
+        },
+      ],
+    };
+  },
 };
 </script>
 
