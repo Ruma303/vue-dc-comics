@@ -2,15 +2,18 @@
   <main>
     <div class="top-main" />
     <div class="bottom-main">
+      <h1 id="current-series">
+        CURRENT SERIES
+      </h1>
       <CardPage
-        v-for="i in 12"
-        :key="i"
+        v-for="i in arrData"
+        :key="i.series"
         class="card"
         :thumb="i.thumb"
         :series="i.series"
       />
-      <h1 id="current-series">
-        CURRENT SERIES
+      <h1 id="load">
+        LOAD MORE
       </h1>
     </div>
   </main>
@@ -105,7 +108,7 @@ main {
   white-space: nowrap;
   position: absolute;
   left: 2rem;
-  top: 44.5rem;
+  top: 24.5rem;
   z-index: 3;
 }
 main .top-main{
@@ -115,12 +118,26 @@ main .top-main{
   object-position: center;
 }
 main .bottom-main {
-  // background-color: salmon;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   width: 100%;
-  height: 20rem;
-  padding: 1rem auto;
+  height: 50rem;
+  padding: 3rem 1rem;
   margin: 0 auto;
+}
+#load {
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(15, 130, 247);
+  white-space: nowrap;
+  position: absolute;
+  left: 46.5vw;
+  top: 72.5rem;
+  z-index: 3;
+  cursor: pointer;
 }
 </style>

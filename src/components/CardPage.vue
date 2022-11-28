@@ -1,6 +1,9 @@
 <template>
   <div class="card">
-    <img :src="thumb" alt="" />
+    <img
+      :src="thumb"
+      :alt="series"
+    >
     <h3>{{ series }}</h3>
   </div>
 </template>
@@ -18,8 +21,6 @@ export default {
 <style lang="scss" scoped>
 .card {
   text-align: left;
-  flex: 0 0 calc((100% / 6) - (100% - 5rem));
-  height: 300px;
-  width: 200px;
+  flex: 0 0 15%;
 }
 </style>
