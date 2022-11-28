@@ -1,27 +1,39 @@
 <template>
   <footer>
-      <ul class="top-footer">
-        <li>
-          <img src="@/img/buy-comics-digital-comics.png" alt="" class="img-figure">
-          <span class="img-text">digital comics</span>
-        </li>
-        <li>
-          <img src="@/img/buy-comics-merchandise.png" alt="" class="img-figure">
-          <span class="img-text">dc merchandise</span>
-        </li>
-        <li>
-          <img src="@/img/buy-comics-subscriptions.png" alt="" class="img-figure">
-          <span class="img-text">subscription</span>
-        </li>
-        <li>
-          <img src="@/img/buy-comics-shop-locator.png" alt="" class="img-figure">
-          <span class="img-text">comic shop locator</span>
-        </li>
-        <li>
-          <img src="@/img/buy-dc-power-visa.svg" alt="" class="img-figure">
-          <span class="img-text">dc power visa</span>
-        </li>
-      </ul>
+    <ul class="top-footer">
+      <li>
+        <img
+          src="@/img/buy-comics-digital-comics.png"
+          alt=""
+          class="img-figure"
+        />
+        <span class="img-text">digital comics</span>
+      </li>
+      <li>
+        <img src="@/img/buy-comics-merchandise.png" alt="" class="img-figure" />
+        <span class="img-text">dc merchandise</span>
+      </li>
+      <li>
+        <img
+          src="@/img/buy-comics-subscriptions.png"
+          alt=""
+          class="img-figure"
+        />
+        <span class="img-text">subscription</span>
+      </li>
+      <li>
+        <img
+          src="@/img/buy-comics-shop-locator.png"
+          alt=""
+          class="img-figure"
+        />
+        <span class="img-text">comic shop locator</span>
+      </li>
+      <li>
+        <img src="@/img/buy-dc-power-visa.svg" alt="" class="img-figure" />
+        <span class="img-text">dc power visa</span>
+      </li>
+    </ul>
     <div class="middle-footer">
       <div class="middle-footer-lt">
         <ul class="middle-footer-lt-ul">
@@ -68,7 +80,9 @@
           </li>
         </ul>
       </div>
-      <div class="middle-footer-rt"><img src="@/img/dc-logo-bg.png" alt=""></div>
+      <div class="middle-footer-rt">
+        <img src="@/img/dc-logo-bg.png" alt="" />
+      </div>
     </div>
     <div class="bottom-footer">
       <div class="bottom-footer-lt">
@@ -77,11 +91,11 @@
       <div>
         <ul class="bottom-footer-rt">
           <li id="title-follow">FOLLOW US</li>
-          <li><img src="@/img/footer-facebook.png" alt=""></li>
-          <li><img src="@/img/footer-twitter.png" alt=""></li>
-          <li><img src="@/img/footer-youtube.png" alt=""></li>
-          <li><img src="@/img/footer-pinterest.png" alt=""></li>
-          <li><img src="@/img/footer-periscope.png" alt=""></li>
+          <li><img src="@/img/footer-facebook.png" alt="" /></li>
+          <li><img src="@/img/footer-twitter.png" alt="" /></li>
+          <li><img src="@/img/footer-youtube.png" alt="" /></li>
+          <li><img src="@/img/footer-pinterest.png" alt="" /></li>
+          <li><img src="@/img/footer-periscope.png" alt="" /></li>
         </ul>
       </div>
     </div>
@@ -91,39 +105,39 @@
 
 <script>
 export default {
-  name: 'FooterSection',
+  name: "FooterSection",
 };
 </script>
 
 <style lang="scss" scoped>
 //variabili scss
-$color_blue:rgb(0, 138, 255);
+$color_blue: rgb(0, 138, 255);
 
 .top-footer,
 .bottom-footer,
-.rest-footer{
+.rest-footer {
   position: relative;
   z-index: 2;
 }
-.top-footer{
+.top-footer {
   background-color: $color_blue;
-  height: 189px;//TODO: rendi dinamico
+  height: 189px; //TODO: rendi dinamico
 }
-.middle-footer{
-  background-image: url('@/img/footer-bg.jpg');
+.middle-footer {
+  background-image: url("@/img/footer-bg.jpg");
   height: 480px; //TODO: rendi dinamico
   background-repeat: none;
 }
-.bottom-footer{
+.bottom-footer {
   background-color: rgb(47, 47, 47);
-  height: 157px;//TODO: rendi dinamico
+  height: 157px; //TODO: rendi dinamico
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.rest-footer{
+.rest-footer {
   background-color: rgb(32, 32, 32);
-  height: 50vh;//TODO: rendi dinamico
+  height: 50vh; //TODO: rendi dinamico
 }
 .top-footer {
   display: flex;
@@ -140,7 +154,7 @@ $color_blue:rgb(0, 138, 255);
   color: white;
   text-transform: uppercase;
 }
-.top-footer img{
+.top-footer img {
   max-width: 4rem;
   max-height: 4rem;
 }
@@ -150,52 +164,52 @@ $color_blue:rgb(0, 138, 255);
   align-items: center;
 }
 
-.middle-footer-lt-ul{
+.middle-footer-lt-ul {
   display: flex;
   gap: 2rem;
 }
-.middle-footer h1{
+.middle-footer h1 {
   color: white;
   font-size: 1.5rem;
 }
-.middle-footer span{
+.middle-footer span {
   color: grey;
 }
-.first-col{
+.first-col {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.link-list{
+.link-list {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
-.link-list h1{
+.link-list h1 {
   margin-bottom: 0.5rem;
 }
-.link-list span{
+.link-list span {
   cursor: pointer;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-.middle-footer-rt img{
+.middle-footer-rt img {
   position: relative;
   // z-index: 0;
   width: 40rem;
   height: 40rem;
 }
-.btn-signup{
+.btn-signup {
   background-color: rgb(48, 48, 48);
   color: white;
-  padding: .5rem;
+  padding: 0.5rem;
   border-color: $color_blue;
 }
-.bottom-footer-rt{
+.bottom-footer-rt {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-#title-follow{
+#title-follow {
   color: $color_blue;
   font-weight: 800;
   font-size: 1.6rem;

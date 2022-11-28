@@ -1,8 +1,9 @@
 <template>
   <header>
-    <img src="@/img/dc-logo.png"
-    alt=""
-    class="header-logo"
+    <img
+      src="@/img/dc-logo.png"
+      alt=""
+      class="header-logo"
     >
     <nav>
       <ul>
@@ -11,7 +12,7 @@
           :key="eleMenu.text"
         >
           <a :href="eleMenu.url">{{ eleMenu.text }}</a>
-      </li>
+        </li>
       </ul>
     </nav>
   </header>
